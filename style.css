@@ -92,12 +92,12 @@ body {
 }
 
 .btn {
-  background-color: var(--button-color);
-  border: none;
+  background-color: var(--bg-color);
+  border: 2px solid black;
   cursor: pointer;
   height: 44px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -109,7 +109,7 @@ body {
 .btn:hover {
   color: #cecdcd;
   border-radius: 10px;
-  border-bottom: 2px solid var(--text-description-color);
+  border-bottom: 2px solid var(--text-tag-color);
 }
 
 .livros {
@@ -141,7 +141,7 @@ body {
 }
 
 .livro__titulo {
-  color: var(--text-title-color);
+  color: #000;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -181,7 +181,7 @@ body {
   border-radius: 4px;
 }
 
-.livro__botao
+.livro__botao-adicionar-ao-carrinho
 {
   padding: 6px;
   margin: 12px;
@@ -189,15 +189,21 @@ body {
   border-radius: 10px;
   height: 60px;
   font-size: 18px;
-  color: wheat;
+  color: #fff;
+}
+
+.livro__botao-adicionar-ao-carrinho:hover
+{
+  color: #9c9c9c;
 }
 
 .livros__disponiveis {
   width: 100%;
   height: 80px;
-  background-color: var(--text-description-color);
+  background-color: transparent;
   margin-top: 1rem;
   text-align: center;
+  border: 2px solid black;
 
   display: flex;
   justify-content: center;
@@ -205,7 +211,7 @@ body {
 }
 
 .livros__disponiveis p {
-  color: #fff;
+  color: #000;
   font-weight: 500;
   line-height: 24px;
   font-size: 2.5em;
@@ -213,8 +219,6 @@ body {
 
 .rodape {
   width: 100%;
-  height: 104px;
-  background: linear-gradient(96.48deg, #002f52 36.3%, #326589 99.56%);
   margin-top: 1rem;
   text-align: center;
 
@@ -224,7 +228,7 @@ body {
 }
 
 .rodape p {
-  color: #fff;
+  color: #000;
   font-weight: 500;
   line-height: 24px;
 }
@@ -232,4 +236,28 @@ body {
 .hidden
 {
   display: none;
+}
+
+.mais-informacoes
+{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+}
+
+.mais-informacoes__links>ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mais-informacoes__links>ul>li
+{
+  margin-bottom: 1rem;
+}
+
+.mais-informacoes__links p
+{
+  font-size: 12px;
 }
