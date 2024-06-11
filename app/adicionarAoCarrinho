@@ -1,0 +1,5 @@
+const livro = document.querySelectorAll(".livro__botao-adicionar-ao-carrinho");
+livro.forEach(element => {
+    
+});
+console.log(livro, "oi")

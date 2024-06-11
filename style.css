@@ -261,3 +261,9 @@ body {
 {
   font-size: 12px;
 }
+
+.destaque
+{
+  color: #000;
+  background-color: aqua;
+}
